@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 — 배터리 리포트 / Privacy Policy — Battery Report</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a1a; --muted: #5f6368;
+    --rule: #e3e5e8; --accent: #1a73e8; --card: #f6f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a; --fg: #e6e8eb; --muted: #9aa0a6;
+      --rule: #2b2f36; --accent: #8ab4f8; --card: #1c1f25;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg); color: var(--fg);
+    font: 16px/1.75 -apple-system, "Segoe UI", "Malgun Gothic", Roboto, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.6rem; line-height: 1.35; margin: 0 0 .35rem; letter-spacing: -.01em; }
+  h2 {
+    font-size: 1.1rem; margin: 2.5rem 0 .6rem;
+    padding-top: 1.25rem; border-top: 1px solid var(--rule);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+  .meta { color: var(--muted); font-size: .9rem; margin: 0 0 2rem; }
+  .lead {
+    background: var(--card); border: 1px solid var(--rule);
+    border-radius: 10px; padding: 1rem 1.15rem; margin: 0 0 2rem;
+  }
+  .lead p { margin: .4rem 0; }
+  a { color: var(--accent); }
+  code {
+    background: var(--card); border: 1px solid var(--rule); border-radius: 4px;
+    padding: .1em .4em; font-size: .88em;
+    font-family: ui-monospace, Consolas, "Courier New", monospace;
+  }
+  table { border-collapse: collapse; width: 100%; margin: .75rem 0; font-size: .94rem; }
+  th, td { text-align: left; padding: .55rem .6rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  .langbar { margin: 0 0 2rem; font-size: .95rem; }
+  .langbar a { margin-right: .9rem; }
+  hr.sep { border: 0; border-top: 4px double var(--rule); margin: 4rem 0 3rem; }
+  footer { color: var(--muted); font-size: .88rem; margin-top: 3rem; }
+</style>
+</head>
+<body>
+<main>
+
+<nav class="langbar"><a href="#ko">한국어</a><a href="#en">English</a></nav>
+
+<section id="ko">
+<h1>개인정보처리방침</h1>
+<p class="meta">배터리 리포트 (Battery Report) · Android 앱 · <code>com.dws.batterymonitor</code><br>
+시행일: 2026년 9월 2일</p>
+
+<div class="lead">
+<p><strong>이 앱은 개발자에게 어떤 정보도 보내지 않습니다.</strong></p>
+<p>배터리 측정값은 전부 사용자의 기기 안에만 저장되며, 외부로 전송하는 기능이 앱에 존재하지 않습니다. 개발자는 사용자의 배터리 정보를 열람할 수 없습니다.</p>
+<p>다만 이 앱은 무료로 제공하기 위해 <strong>Google AdMob 광고</strong>를 표시하며, 광고 표시 과정에서 Google이 광고 식별자 등을 수집합니다. 아래 4항에 자세히 적었습니다.</p>
+</div>
+
+<h2>1. 앱이 직접 수집하는 개인정보</h2>
+<p><strong>없습니다.</strong> 이 앱은 회원가입·로그인 기능이 없고, 이름·이메일·전화번호·주소·연락처·위치·사진 등 어떤 개인정보도 요구하거나 수집하지 않습니다.</p>
+
+<h2>2. 기기 안에만 저장되는 정보</h2>
+<p>배터리 상태를 계산하기 위해 다음 값을 기기 내부 저장소(<code>SharedPreferences</code>)에 기록합니다.</p>
+<ul>
+  <li>배터리 잔량(%), 잔량 용량(mAh), 측정 시각</li>
+  <li>위 표본에서 계산된 만충 용량 및 건강도 추정값</li>
+  <li>앱이 처음 측정을 시작한 시각</li>
+</ul>
+<p>이 정보는 <strong>기기 밖으로 나가지 않습니다.</strong> 서버로 전송하거나, 개발자 또는 제3자와 공유하지 않습니다. 앱을 삭제하면 이 정보도 함께 삭제되며, 별도의 백업본은 존재하지 않습니다.</p>
+<p>정확도를 높이기 위해 앱을 닫은 뒤에도 <strong>약 1시간 간격으로 배터리 값을 기록</strong>합니다(Android WorkManager 사용). 이 역시 기기 내부 기록입니다.</p>
+
+<h2>3. 앱이 사용하는 권한</h2>
+<p>이 앱은 사용자에게 별도로 허용을 묻는 <strong>런타임 권한을 전혀 사용하지 않습니다.</strong> 설치 시 선언되는 권한은 다음과 같습니다.</p>
+<table>
+  <tr><th>권한</th><th>용도</th></tr>
+  <tr><td><code>INTERNET</code><br><code>ACCESS_NETWORK_STATE</code></td><td>광고 표시 (앱 기능 자체에는 인터넷이 필요하지 않습니다)</td></tr>
+  <tr><td><code>com.google.android.gms.permission.AD_ID</code><br><code>ACCESS_ADSERVICES_AD_ID</code><br><code>ACCESS_ADSERVICES_ATTRIBUTION</code><br><code>ACCESS_ADSERVICES_TOPICS</code></td><td>Google AdMob 광고 SDK가 자동으로 추가하는 광고 식별자 관련 권한</td></tr>
+  <tr><td><code>WAKE_LOCK</code><br><code>FOREGROUND_SERVICE</code></td><td>주기적인 배터리 값 기록 작업 실행</td></tr>
+</table>
+<p>위치, 연락처, 저장소, 카메라, 마이크, 전화 등 민감한 권한은 사용하지 않습니다.</p>
+
+<h2>4. 광고 (Google AdMob)</h2>
+<p>이 앱은 Google AdMob 배너 광고를 표시합니다. 광고 게재 과정에서 Google 및 그 파트너가 다음과 같은 정보를 수집·이용할 수 있습니다.</p>
+<ul>
+  <li>광고 ID(Advertising ID) 등 광고 식별자</li>
+  <li>IP 주소, 대략적인 위치(국가·지역 수준)</li>
+  <li>기기 종류, 운영체제 버전 등 기기 정보</li>
+  <li>광고 노출·클릭 기록</li>
+</ul>
+<p>이 정보는 <strong>개발자에게 전달되지 않으며</strong>, 개발자는 개별 사용자를 식별할 수 있는 형태의 자료를 받지 않습니다. 개발자가 확인할 수 있는 것은 총 노출수·수익 등 집계된 통계뿐입니다.</p>
+<p>Google의 데이터 처리에 관한 자세한 내용은 다음을 참고하세요.</p>
+<ul>
+  <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
+  <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob이 수집하는 데이터 안내</a></li>
+</ul>
+
+<h2>5. 유럽(EEA)·영국 사용자의 동의</h2>
+<p>유럽경제지역 및 영국 사용자에게는 GDPR에 따라 <strong>광고를 요청하기 전에 동의 화면을 표시</strong>합니다(Google User Messaging Platform 사용). 동의하지 않으면 맞춤 광고가 게재되지 않습니다.</p>
+<p>동의는 언제든지 변경할 수 있습니다. 동의 화면이 표시되는 지역에서는 앱 화면 안에 <strong>개인정보 옵션</strong> 진입점이 나타나며, 여기서 선택을 다시 설정할 수 있습니다.</p>
+
+<h2>6. 만 13세 미만 아동</h2>
+<p>이 앱은 아동을 대상으로 하지 않으며, 아동으로부터 개인정보를 고의로 수집하지 않습니다.</p>
+
+<h2>7. 정보의 보관과 삭제</h2>
+<ul>
+  <li><strong>기기 내 기록:</strong> 앱을 삭제하면 즉시 함께 삭제됩니다. Android 설정 → 애플리케이션 → 배터리 리포트 → 저장공간에서 <em>데이터 삭제</em>로도 지울 수 있습니다.</li>
+  <li><strong>광고 식별자:</strong> Android 설정 → 개인정보 보호 → 광고에서 광고 ID를 재설정하거나 삭제할 수 있습니다.</li>
+</ul>
+
+<h2>8. 제3자 제공</h2>
+<p>개발자는 사용자의 정보를 판매하거나 제3자에게 제공하지 않습니다. 4항에 기재된 광고 서비스 제공자(Google)의 처리 외에 다른 외부 전송은 없습니다.</p>
+
+<h2>9. 방침의 변경</h2>
+<p>이 방침이 변경되면 이 페이지에 수정된 내용과 시행일을 게시합니다. 중요한 변경이 있을 경우 앱 업데이트 안내를 통해 알립니다.</p>
+
+<h2>10. 문의</h2>
+<p>개인정보 처리에 관한 문의는 아래로 보내주시기 바랍니다.</p>
+<p><a href="mailto:sdwdev89@gmail.com">sdwdev89@gmail.com</a></p>
+</section>
+
+<hr class="sep">
+
+<section id="en">
+<h1>Privacy Policy</h1>
+<p class="meta">Battery Report · Android app · <code>com.dws.batterymonitor</code><br>
+Effective date: September 2, 2026</p>
+
+<div class="lead">
+<p><strong>This app sends nothing to the developer.</strong></p>
+<p>All battery measurements stay on your device. The app has no capability to transmit them anywhere, and the developer cannot view your battery data.</p>
+<p>The app does show <strong>Google AdMob ads</strong> so that it can be offered free of charge. Google collects advertising identifiers as part of serving those ads. See section 4.</p>
+</div>
+
+<h2>1. Personal information collected by the app</h2>
+<p><strong>None.</strong> There is no sign-up or login. The app does not request or collect your name, email, phone number, address, contacts, location, or photos.</p>
+
+<h2>2. Information stored on your device only</h2>
+<p>To calculate battery condition, the app records the following in local device storage (<code>SharedPreferences</code>):</p>
+<ul>
+  <li>Battery level (%), remaining charge (mAh), and the time of measurement</li>
+  <li>Full charge capacity and health estimates derived from those samples</li>
+  <li>The time the app first started measuring</li>
+</ul>
+<p>This information <strong>never leaves your device.</strong> It is not uploaded to any server and is not shared with the developer or any third party. Uninstalling the app deletes it; no backup copy exists.</p>
+<p>To improve accuracy, the app also records battery values roughly <strong>once per hour in the background</strong> (via Android WorkManager). These records are likewise local only.</p>
+
+<h2>3. Permissions used</h2>
+<p>The app uses <strong>no runtime permissions</strong> — you are never asked to grant anything. The permissions declared at install time are:</p>
+<table>
+  <tr><th>Permission</th><th>Purpose</th></tr>
+  <tr><td><code>INTERNET</code><br><code>ACCESS_NETWORK_STATE</code></td><td>Serving ads (the app's own features do not require a network connection)</td></tr>
+  <tr><td><code>com.google.android.gms.permission.AD_ID</code><br><code>ACCESS_ADSERVICES_AD_ID</code><br><code>ACCESS_ADSERVICES_ATTRIBUTION</code><br><code>ACCESS_ADSERVICES_TOPICS</code></td><td>Advertising identifier permissions added automatically by the Google AdMob SDK</td></tr>
+  <tr><td><code>WAKE_LOCK</code><br><code>FOREGROUND_SERVICE</code></td><td>Running the periodic battery sampling task</td></tr>
+</table>
+<p>No location, contacts, storage, camera, microphone, or phone permissions are used.</p>
+
+<h2>4. Advertising (Google AdMob)</h2>
+<p>The app displays Google AdMob banner ads. In the course of serving ads, Google and its partners may collect and use:</p>
+<ul>
+  <li>Advertising identifiers such as the Advertising ID</li>
+  <li>IP address and approximate location (country or region level)</li>
+  <li>Device information such as model and OS version</li>
+  <li>Ad impression and click records</li>
+</ul>
+<p>This information is <strong>not passed to the developer</strong>. The developer receives only aggregate statistics such as total impressions and revenue, never data identifying an individual user.</p>
+<p>For details on Google's data handling, see:</p>
+<ul>
+  <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+  <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">How AdMob collects and uses data</a></li>
+</ul>
+
+<h2>5. Consent for users in the EEA and the UK</h2>
+<p>For users in the European Economic Area and the United Kingdom, the app <strong>shows a consent screen before requesting any ads</strong>, in accordance with the GDPR (using Google's User Messaging Platform). If you do not consent, personalized ads are not served.</p>
+<p>You can change your choice at any time. Where the consent screen applies, a <strong>Privacy options</strong> entry point appears inside the app so you can revisit your selection.</p>
+
+<h2>6. Children under 13</h2>
+<p>This app is not directed to children and does not knowingly collect personal information from them.</p>
+
+<h2>7. Retention and deletion</h2>
+<ul>
+  <li><strong>On-device records:</strong> deleted immediately when you uninstall the app. You can also clear them via Android Settings → Apps → Battery Report → Storage → <em>Clear data</em>.</li>
+  <li><strong>Advertising identifier:</strong> you can reset or delete your Advertising ID in Android Settings → Privacy → Ads.</li>
+</ul>
+
+<h2>8. Disclosure to third parties</h2>
+<p>The developer does not sell or share your information with third parties. Apart from the advertising provider described in section 4, there is no external transmission.</p>
+
+<h2>9. Changes to this policy</h2>
+<p>If this policy changes, the revised text and its effective date will be posted on this page. Significant changes will be noted in the app's update notes.</p>
+
+<h2>10. Contact</h2>
+<p>For questions about privacy, please contact:</p>
+<p><a href="mailto:sdwdev89@gmail.com">sdwdev89@gmail.com</a></p>
+</section>
+
+<footer>배터리 리포트 (Battery Report) · com.dws.batterymonitor</footer>
+
+</main>
+</body>
+</html>
