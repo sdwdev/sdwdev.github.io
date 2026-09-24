@@ -60,7 +60,7 @@
 <section id="ko">
 <h1>개인정보처리방침</h1>
 <p class="meta">배터리 리포트 (Battery Report) · Android 앱 · <code>com.dws.batterymonitor</code><br>
-시행일: 2026년 9월 2일</p>
+시행일: 2026년 9월 25일 (최초 게시 2026년 9월 2일)</p>
 
 <div class="lead">
 <p><strong>이 앱은 개발자에게 어떤 정보도 보내지 않습니다.</strong></p>
@@ -80,19 +80,22 @@
 </ul>
 <p>이 정보는 <strong>기기 밖으로 나가지 않습니다.</strong> 서버로 전송하거나, 개발자 또는 제3자와 공유하지 않습니다. 앱을 삭제하면 이 정보도 함께 삭제되며, 별도의 백업본은 존재하지 않습니다.</p>
 <p>정확도를 높이기 위해 앱을 닫은 뒤에도 <strong>약 1시간 간격으로 배터리 값을 기록</strong>합니다(Android WorkManager 사용). 이 역시 기기 내부 기록입니다.</p>
+<p>사용자가 <strong>정밀도 알림</strong>을 켠 경우, 측정이 더 정확해졌는지도 이 기록을 바탕으로 <strong>기기 안에서만</strong> 판단합니다. 알림을 보내기 위해 어떤 정보도 외부로 전송하지 않으며, 이미 보낸 알림의 종류만 기기에 기록해 같은 알림을 반복하지 않습니다.</p>
 
 <h2>3. 앱이 사용하는 권한</h2>
-<p>이 앱은 사용자에게 별도로 허용을 묻는 <strong>런타임 권한을 전혀 사용하지 않습니다.</strong> 설치 시 선언되는 권한은 다음과 같습니다.</p>
+<p>배터리 정보를 읽는 데에는 <strong>어떤 권한도 필요하지 않습니다.</strong> 사용자에게 허용을 묻는 권한은 <strong>알림 권한 하나뿐</strong>이며, 이것도 사용자가 앱에서 정밀도 알림을 직접 켤 때에만 요청합니다(기본값은 꺼짐). 알림을 켜지 않으면 권한 요청 화면이 나타나지 않습니다.</p>
+<p>앱에 선언된 권한은 다음과 같습니다.</p>
 <table>
   <tr><th>권한</th><th>용도</th></tr>
   <tr><td><code>INTERNET</code><br><code>ACCESS_NETWORK_STATE</code></td><td>광고 표시 (앱 기능 자체에는 인터넷이 필요하지 않습니다)</td></tr>
   <tr><td><code>com.google.android.gms.permission.AD_ID</code><br><code>ACCESS_ADSERVICES_AD_ID</code><br><code>ACCESS_ADSERVICES_ATTRIBUTION</code><br><code>ACCESS_ADSERVICES_TOPICS</code></td><td>Google AdMob 광고 SDK가 자동으로 추가하는 광고 식별자 관련 권한</td></tr>
   <tr><td><code>WAKE_LOCK</code><br><code>FOREGROUND_SERVICE</code></td><td>주기적인 배터리 값 기록 작업 실행</td></tr>
+  <tr><td><code>POST_NOTIFICATIONS</code></td><td>정밀도 알림 표시 (선택 기능 · Android 13 이상에서 사용자가 알림을 켤 때만 허용을 요청)</td></tr>
 </table>
 <p>위치, 연락처, 저장소, 카메라, 마이크, 전화 등 민감한 권한은 사용하지 않습니다.</p>
 
 <h2>4. 광고 (Google AdMob)</h2>
-<p>이 앱은 Google AdMob 배너 광고를 표시합니다. 광고 게재 과정에서 Google 및 그 파트너가 다음과 같은 정보를 수집·이용할 수 있습니다.</p>
+<p>이 앱은 Google AdMob 광고(화면 하단의 배너 광고, 화면 카드 사이의 네이티브 광고)를 표시합니다. 광고 게재 과정에서 Google 및 그 파트너가 다음과 같은 정보를 수집·이용할 수 있습니다.</p>
 <ul>
   <li>광고 ID(Advertising ID) 등 광고 식별자</li>
   <li>IP 주소, 대략적인 위치(국가·지역 수준)</li>
@@ -117,6 +120,7 @@
 <ul>
   <li><strong>기기 내 기록:</strong> 앱을 삭제하면 즉시 함께 삭제됩니다. Android 설정 → 애플리케이션 → 배터리 리포트 → 저장공간에서 <em>데이터 삭제</em>로도 지울 수 있습니다.</li>
   <li><strong>광고 식별자:</strong> Android 설정 → 개인정보 보호 → 광고에서 광고 ID를 재설정하거나 삭제할 수 있습니다.</li>
+  <li><strong>알림:</strong> 앱의 알림 카드에서 스위치를 끄거나, Android 설정 → 애플리케이션 → 배터리 리포트 → 알림에서 언제든 끌 수 있습니다.</li>
 </ul>
 
 <h2>8. 제3자 제공</h2>
@@ -124,6 +128,10 @@
 
 <h2>9. 방침의 변경</h2>
 <p>이 방침이 변경되면 이 페이지에 수정된 내용과 시행일을 게시합니다. 중요한 변경이 있을 경우 앱 업데이트 안내를 통해 알립니다.</p>
+<ul>
+  <li>2026년 9월 25일 — 선택 기능인 정밀도 알림과 알림 권한(<code>POST_NOTIFICATIONS</code>)을 반영하고, 광고 형식(배너·네이티브)을 정확히 기재했습니다.</li>
+  <li>2026년 9월 2일 — 최초 게시.</li>
+</ul>
 
 <h2>10. 문의</h2>
 <p>개인정보 처리에 관한 문의는 아래로 보내주시기 바랍니다.</p>
@@ -135,7 +143,7 @@
 <section id="en">
 <h1>Privacy Policy</h1>
 <p class="meta">Battery Report · Android app · <code>com.dws.batterymonitor</code><br>
-Effective date: September 2, 2026</p>
+Effective date: September 25, 2026 (first published September 2, 2026)</p>
 
 <div class="lead">
 <p><strong>This app sends nothing to the developer.</strong></p>
@@ -155,19 +163,22 @@ Effective date: September 2, 2026</p>
 </ul>
 <p>This information <strong>never leaves your device.</strong> It is not uploaded to any server and is not shared with the developer or any third party. Uninstalling the app deletes it; no backup copy exists.</p>
 <p>To improve accuracy, the app also records battery values roughly <strong>once per hour in the background</strong> (via Android WorkManager). These records are likewise local only.</p>
+<p>If you turn on <strong>accuracy alerts</strong>, the app decides whether a measurement has become more precise using these same records, <strong>entirely on your device</strong>. Nothing is transmitted to send an alert; the app only stores which alerts it has already shown so it does not repeat them.</p>
 
 <h2>3. Permissions used</h2>
-<p>The app uses <strong>no runtime permissions</strong> — you are never asked to grant anything. The permissions declared at install time are:</p>
+<p>Reading battery information requires <strong>no permissions at all</strong>. The only permission the app ever asks you for is <strong>notifications</strong>, and only when you turn on accuracy alerts yourself (they are off by default). If you never turn them on, you will never see a permission prompt.</p>
+<p>The permissions declared by the app are:</p>
 <table>
   <tr><th>Permission</th><th>Purpose</th></tr>
   <tr><td><code>INTERNET</code><br><code>ACCESS_NETWORK_STATE</code></td><td>Serving ads (the app's own features do not require a network connection)</td></tr>
   <tr><td><code>com.google.android.gms.permission.AD_ID</code><br><code>ACCESS_ADSERVICES_AD_ID</code><br><code>ACCESS_ADSERVICES_ATTRIBUTION</code><br><code>ACCESS_ADSERVICES_TOPICS</code></td><td>Advertising identifier permissions added automatically by the Google AdMob SDK</td></tr>
   <tr><td><code>WAKE_LOCK</code><br><code>FOREGROUND_SERVICE</code></td><td>Running the periodic battery sampling task</td></tr>
+  <tr><td><code>POST_NOTIFICATIONS</code></td><td>Showing accuracy alerts (optional; on Android 13+ requested only when you turn alerts on)</td></tr>
 </table>
 <p>No location, contacts, storage, camera, microphone, or phone permissions are used.</p>
 
 <h2>4. Advertising (Google AdMob)</h2>
-<p>The app displays Google AdMob banner ads. In the course of serving ads, Google and its partners may collect and use:</p>
+<p>The app displays Google AdMob ads (a banner at the bottom of the screen and a native ad between cards). In the course of serving ads, Google and its partners may collect and use:</p>
 <ul>
   <li>Advertising identifiers such as the Advertising ID</li>
   <li>IP address and approximate location (country or region level)</li>
@@ -192,6 +203,7 @@ Effective date: September 2, 2026</p>
 <ul>
   <li><strong>On-device records:</strong> deleted immediately when you uninstall the app. You can also clear them via Android Settings → Apps → Battery Report → Storage → <em>Clear data</em>.</li>
   <li><strong>Advertising identifier:</strong> you can reset or delete your Advertising ID in Android Settings → Privacy → Ads.</li>
+  <li><strong>Notifications:</strong> turn alerts off at any time with the switch in the app's Alerts card, or in Android Settings → Apps → Battery Report → Notifications.</li>
 </ul>
 
 <h2>8. Disclosure to third parties</h2>
@@ -199,6 +211,10 @@ Effective date: September 2, 2026</p>
 
 <h2>9. Changes to this policy</h2>
 <p>If this policy changes, the revised text and its effective date will be posted on this page. Significant changes will be noted in the app's update notes.</p>
+<ul>
+  <li>September 25, 2026 — Added the optional accuracy alerts and the notification permission (<code>POST_NOTIFICATIONS</code>); described the ad formats (banner and native) precisely.</li>
+  <li>September 2, 2026 — First published.</li>
+</ul>
 
 <h2>10. Contact</h2>
 <p>For questions about privacy, please contact:</p>
