@@ -10,6 +10,13 @@ Privacy policies for my Android apps.
 
 - [개인정보처리방침 / Privacy Policy](battery-report/privacy.html)
 
+### 말모아 (MalMoa)
+
+부모와 보호자가 아이의 말과 목소리를 기록하는 언어 성장 기록장입니다.
+`com.dws.malmoa`
+
+- [개인정보처리방침 / Privacy Policy / プライバシーポリシー](malmoa/privacy.html)
+
 ### 문의 / Contact
 
 <sdwdev89@gmail.com>
