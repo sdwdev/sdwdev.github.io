@@ -1,0 +1,58 @@
+/* 여행발자국 — 스토어 대표 이미지의 라벤더·코랄 톤. 공통 레이아웃은 assets/app.css. */
+
+body.travel {
+  --bg: #faf7fd;
+  --surface: #ffffff;
+  --ink: #2f2540;
+  --muted: #615a6e;
+  --line: #e8e0f0;
+  --accent: #5d4384;
+  --accent-strong: #4a346c;
+  --accent-soft: #efe7fa;
+  --shadow: 0 1px 2px rgba(47, 37, 64, .06), 0 20px 44px -18px rgba(47, 37, 64, .3);
+  --tint-1: #fff0ea; --tint-ink-1: #b0452e;
+  --tint-2: #efe7fa; --tint-ink-2: #5d4384;
+  --tint-3: #e3f2ec; --tint-ink-3: #1f6b55;
+  --tint-4: #e6f1fb; --tint-ink-4: #2a6496;
+  --frame: #2f2540;
+  --closing-bg: #4a346c;
+  --closing-ink: #ffffff;
+  --closing-muted: rgba(255, 255, 255, .84);
+}
+
+.travel .app-hero { background: linear-gradient(160deg, #f1e8fd 0%, #fbf3ef 60%, var(--bg) 100%); }
+.travel .hero-art .blob { background: linear-gradient(150deg, #e3d3fa, #f9e2d8); }
+.travel .closing { background: linear-gradient(135deg, #5d4384, #3c2b58); }
+
+.chip.c1 { left: -6%; top: 16%; }
+.chip.c2 { right: -6%; top: 52%; animation-delay: -2.5s; }
+
+/* 지원 안내 */
+.support { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.support > div { padding: 32px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); }
+.support h3 { margin-bottom: 12px; font-size: 20px; font-weight: 800; }
+.support p, .support li { color: var(--muted); font-size: 16px; }
+.support p + p { margin-top: 10px; }
+.support ol { margin: 0; padding-left: 22px; }
+.support li + li { margin-top: 6px; }
+.support .mail { display: inline-block; margin-top: 4px; color: var(--accent); font-size: 18px; font-weight: 800; text-underline-offset: 3px; }
+.support .note { margin-top: 14px; font-size: 14px; }
+
+/* English support */
+.en-support { max-width: 860px; margin: 0 auto; padding: 36px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); }
+.en-support h2 { font-size: 24px; font-weight: 800; letter-spacing: -.01em; }
+.en-support h3 { margin: 24px 0 8px; font-size: 18px; font-weight: 800; letter-spacing: 0; }
+.en-support p, .en-support li { color: var(--muted); font-size: 16px; word-break: normal; }
+.en-support p + p { margin-top: 8px; }
+.en-support ol { margin: 0; padding-left: 22px; }
+.en-support a { color: var(--accent); font-weight: 700; text-underline-offset: 3px; }
+
+@media (max-width: 720px) {
+  .support { grid-template-columns: 1fr; }
+  .support > div, .en-support { padding: 24px; }
+}
+
+@media (max-width: 560px) {
+  .chip.c1 { left: 0; }
+  .chip.c2 { right: 0; }
+}

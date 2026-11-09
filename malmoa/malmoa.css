@@ -1,0 +1,46 @@
+/* 말모아 — 앱의 크림·민트 팔레트(lib/app/theme.dart)와 말모아 전용 요소. 공통 레이아웃은 assets/app.css. */
+
+body.malmoa {
+  --bg: #fffbf6;
+  --surface: #ffffff;
+  --ink: #493b32;
+  --muted: #6b645e;
+  --line: #efe6da;
+  --accent: #347f69;
+  --accent-strong: #2a6a57;
+  --accent-soft: #e4f3ea;
+  --shadow: 0 1px 2px rgba(73, 59, 50, .06), 0 18px 40px -18px rgba(73, 59, 50, .28);
+  --tint-1: #fff1d9; --tint-ink-1: #9a4b27;
+  --tint-2: #e4f3ea; --tint-ink-2: #347f69;
+  --tint-3: #ffeaf0; --tint-ink-3: #b44266;
+  --tint-4: #e8f3fa; --tint-ink-4: #246f9c;
+  --frame: #2f2620;
+  --closing-ink: #fffbf6;
+  --closing-muted: #e3d8cc;
+}
+
+/* 첫 화면 말풍선: 단어·표현·문장 */
+.bubble {
+  position: absolute; z-index: 2;
+  padding: 10px 18px 12px; border-radius: 22px; background: var(--t);
+  box-shadow: 0 10px 24px -12px rgba(73, 59, 50, .35);
+  font-size: clamp(17px, 2vw, 21px); font-weight: 800; line-height: 1.3; white-space: nowrap;
+  animation: float 6s ease-in-out infinite;
+}
+.bubble small { display: block; margin-bottom: 2px; color: var(--ti); font-size: 12px; font-weight: 700; letter-spacing: .02em; }
+.bubble.word { left: 0; top: 14%; }
+.bubble.expr { right: -2%; top: 40%; animation-delay: -2s; }
+.bubble.sent { left: 2%; bottom: 14%; animation-delay: -4s; }
+
+/* 12지 캐릭터 */
+.zodiac { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 16px; list-style: none; margin: 0; padding: 0; }
+.zodiac li { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 16px 8px 14px; border-radius: 24px; background: var(--surface); border: 1px solid var(--line); transition: transform .2s; }
+.zodiac li:hover { transform: translateY(-4px); }
+.zodiac img { width: 88%; max-width: 96px; aspect-ratio: 1; }
+.zodiac span { font-size: 15px; font-weight: 700; }
+
+@media (max-width: 960px) { .zodiac { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 560px) {
+  .zodiac { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  .bubble { padding: 8px 14px 10px; border-radius: 18px; }
+}

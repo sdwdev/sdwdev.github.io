@@ -1,0 +1,61 @@
+/* 배터리 리포트 — 앱의 다크 화면과 아이콘의 짙은 초록을 따른다. 공통 레이아웃은 assets/app.css. */
+
+body.battery {
+  --bg: #0c1310;
+  --surface: #131c18;
+  --ink: #e8f0eb;
+  --muted: #a1b0a8;
+  --line: #24312b;
+  --accent: #7be39a;
+  --accent-strong: #9aecb3;
+  --accent-ink: #06231a;
+  --accent-soft: #163628;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 22px 44px -18px rgba(0, 0, 0, .7);
+  --tint-1: #2b2614; --tint-ink-1: #f3c969;
+  --tint-2: #123426; --tint-ink-2: #7be39a;
+  --tint-3: #2e1b1e; --tint-ink-3: #ff9d9d;
+  --tint-4: #13253a; --tint-ink-4: #8cc6ff;
+  --frame: #2a3530;
+  --card: #18231e;
+  --closing-bg: #0f4f36;
+  --closing-ink: #ffffff;
+  --closing-muted: rgba(255, 255, 255, .8);
+  color-scheme: dark;
+}
+
+.battery .status.is-live { background: var(--accent-soft); color: var(--accent); }
+.battery .steps .kind { background: rgba(0, 0, 0, .3); }
+.battery .trust-grid li { background: rgba(12, 19, 16, .55); }
+.battery .notice { background: var(--surface); }
+.battery .faq summary::after { border-color: var(--muted); }
+
+/* 첫 화면 값 카드: 값 + 출처 */
+.chip span { display: block; margin-top: 2px; color: var(--muted); font-size: 12px; }
+.battery .chip { background: #18231e; border: 1px solid var(--line); }
+.chip.c1 { left: -4%; top: 4%; }
+.chip.c2 { right: -4%; top: 38%; animation-delay: -2s; }
+.chip.c3 { left: 0; bottom: 12%; animation-delay: -4s; }
+
+/* 수명 추정 4단계 */
+.ladder { display: grid; gap: 12px; max-width: 820px; margin: 0 auto; padding: 0; list-style: none; counter-reset: rung; }
+.ladder li {
+  position: relative; display: grid; grid-template-columns: 56px 1fr auto; align-items: center; gap: 20px;
+  padding: 22px 24px; border-radius: 22px; background: var(--surface); border: 1px solid var(--line);
+}
+.ladder li::before {
+  counter-increment: rung; content: counter(rung);
+  display: grid; place-items: center; width: 48px; height: 48px; border-radius: 14px;
+  background: var(--accent-soft); color: var(--accent); font-size: 20px; font-weight: 800;
+}
+.ladder h3 { font-size: 18px; font-weight: 800; }
+.ladder p { margin-top: 2px; color: var(--muted); font-size: 15px; }
+.ladder .tag { padding: 4px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-size: 13px; font-weight: 700; white-space: nowrap; }
+.ladder li:nth-child(2)::before { opacity: .85; }
+.ladder li:nth-child(3)::before { opacity: .7; }
+.ladder li:nth-child(4)::before { opacity: .55; }
+.ladder-note { max-width: 820px; margin: 20px auto 0; color: var(--muted); font-size: 15px; text-align: center; }
+
+@media (max-width: 720px) {
+  .ladder li { grid-template-columns: 48px 1fr; padding: 18px; gap: 14px; }
+  .ladder .tag { grid-column: 2; justify-self: start; }
+}

@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>말모아 — 우리 아이 언어 기록장</title>
+<meta name="description" content="아이의 첫 단어부터 문장까지, 말과 목소리를 모아 두는 언어 성장 기록장. 단어사전, 목소리 녹음, 월별 통계를 회원가입 없이 기기 안에서 사용하세요.">
+<link rel="canonical" href="https://sdwdev.github.io/malmoa/">
+<meta name="theme-color" content="#fffbf6">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="말모아">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="말모아 — 처음 하는 말, 오래 간직할 순간">
+<meta property="og:description" content="아이의 첫 단어부터 문장까지, 말과 목소리를 모아 두는 우리 아이 언어 기록장">
+<meta property="og:url" content="https://sdwdev.github.io/malmoa/">
+<meta property="og:image" content="https://sdwdev.github.io/malmoa/img/og.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta property="og:image:alt" content="호랑이 캐릭터와 엄마, 자동차 말풍선 옆에 ‘처음 하는 말, 오래 간직할 순간’이라고 적힌 말모아 소개 이미지">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/characters/tiger.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/apps/malmoa.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="stylesheet" href="../assets/app.css">
+<link rel="stylesheet" href="malmoa.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "말모아",
+  "alternateName": "MalMoa",
+  "operatingSystem": "Android",
+  "applicationCategory": "LifestyleApplication",
+  "description": "아이의 첫 단어부터 문장까지, 말과 목소리를 모아 두는 우리 아이 언어 기록장",
+  "inLanguage": ["ko", "en", "ja"],
+  "url": "https://sdwdev.github.io/malmoa/",
+  "image": "https://sdwdev.github.io/malmoa/img/og.png",
+  "author": { "@type": "Organization", "name": "GameIt Studio", "url": "https://sdwdev.github.io/" }
+}
+</script>
+<meta name="google-adsense-account" content="ca-pub-4364320147278105">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4364320147278105" crossorigin="anonymous"></script>
+</head>
+<body class="app-page malmoa">
+<a class="skip" href="#main">본문 바로가기</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="말모아 소개 처음으로">
+      <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="#347f69" d="M21 3.2C11.4 2.6 4.3 6.9 4 14.6c0 1.6.3 3 .8 4.2 1.9-5.4 5.7-8.9 11-10.9-4.3 2.7-7.5 6.5-8.9 11.4C16.2 21 21.6 14 21 3.2Z"/></svg>말모아
+    </a>
+    <nav class="nav" aria-label="말모아 메뉴">
+      <a class="nav-opt" href="#features">기능</a>
+      <a class="nav-opt" href="#screens">화면</a>
+      <a class="nav-opt" href="#privacy">안심 기록</a>
+      <a class="nav-faq" href="#faq">자주 묻는 질문</a>
+      <a class="nav-home" href="../" title="GameIt Studio 홈">GameIt Studio</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===== hero ===== -->
+  <section class="app-hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">우리 아이 언어 기록장</span>
+        <h1>처음 하는 말,<br>오래 간직할 순간</h1>
+        <p class="lead">“엄마”에서 “아빠 자동차 타자!”까지. 말모아는 부모와 보호자가 아이의 말과 그날의 목소리를 직접 모아 두는 언어 성장 기록장입니다.</p>
+        <span class="status is-live">Android · Google Play 출시 · 무료</span>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.dws.malmoa" rel="noopener">Google Play에서 받기</a>
+          <a class="btn btn-ghost" href="#features">기능 살펴보기</a>
+        </div>
+        <p class="note">회원가입 없음 · 기록과 목소리는 내 기기에만 저장</p>
+      </div>
+
+      <div class="hero-art">
+        <div class="blob" aria-hidden="true"></div>
+        <div class="phone">
+          <img src="img/screens/01-home.png" width="1080" height="1920"
+               alt="아이 프로필과 말 기록하기, 목소리 녹음, 녹음 파일 가져오기 버튼이 있는 말모아 홈 화면">
+        </div>
+        <p class="bubble word t3" aria-hidden="true"><small>단어</small>엄마</p>
+        <p class="bubble expr t1" aria-hidden="true"><small>표현</small>더 주세요</p>
+        <p class="bubble sent t4" aria-hidden="true"><small>문장</small>아빠 자동차 타자!</p>
+        <img class="buddy" src="img/characters/tiger.svg" alt="" width="200" height="200">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== word → expression → sentence ===== -->
+  <section class="section" style="padding-top:32px">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">단어 · 표현 · 문장</span>
+        <h2 class="h2">한 단어가 문장이 되기까지,<br>그 길을 모아 두세요</h2>
+        <p>아이가 한 말을 단어, 표현, 문장으로 나누어 남기면 말이 자라는 모습이 차곡차곡 쌓입니다.</p>
+      </div>
+      <ol class="steps arrows">
+        <li class="t1 reveal"><span class="kind">단어</span><q class="big">엄마</q><p>처음 또렷하게 들린 그 한 단어. 말한 날짜와 상황을 메모와 함께 남겨요.</p></li>
+        <li class="t2 reveal"><span class="kind">표현</span><q class="big">더 주세요</q><p>자주 쓰는 말버릇과 짧은 표현도 따로 모아 볼 수 있어요.</p></li>
+        <li class="t4 reveal"><span class="kind">문장</span><q class="big">아빠 자동차 타자!</q><p>처음 이어 말한 문장은 그날의 목소리와 함께 간직해요.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== features ===== -->
+  <section class="section" id="features" style="padding-top:24px">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">주요 기능</span>
+        <h2 class="h2">기록은 쉽게, 정리는 말모아가</h2>
+      </div>
+
+      <div class="spot reveal">
+        <div class="spot-text">
+          <span class="spot-num">1</span>
+          <h3>기억나는 그대로<br>바로 적어요</h3>
+          <p>아이가 한 말을 그대로 입력하고 종류와 언어를 고르면 끝. 날짜를 몰라도 기록할 수 있어요.</p>
+          <ul class="checks">
+            <li>단어·표현·문장 구분과 상황 메모</li>
+            <li>정확한 날짜가 없으면 ‘날짜 모름’, ‘예전부터 하던 말’</li>
+            <li>소중한 기록은 즐겨찾기로 간직하기</li>
+          </ul>
+        </div>
+        <div class="spot-art t1">
+          <div class="phone"><img src="img/screens/06-record.png" width="1080" height="1920" loading="lazy" alt="아이가 한 문장과 언어, 관찰 날짜를 직접 입력하는 기록 편집 화면"></div>
+        </div>
+      </div>
+
+      <div class="spot flip reveal">
+        <div class="spot-text">
+          <span class="spot-num">2</span>
+          <h3>우리 아이만의<br>단어사전</h3>
+          <p>직접 등록한 단어가 언어별로 모여 아이만의 사전이 됩니다. 같은 말을 다시 적으면 중복을 알려 주고, 반복해서 들은 기록을 함께 보여 줘요.</p>
+          <ul class="checks">
+            <li>언어별 필터와 단어·메모 검색</li>
+            <li>같은 아이·같은 언어의 중복 단어는 하나로 정리</li>
+          </ul>
+        </div>
+        <div class="spot-art t2">
+          <div class="phone"><img src="img/screens/02-dictionary.png" width="1080" height="1920" loading="lazy" alt="언어별 검색과 직접 등록한 단어를 모아보는 단어사전 화면"></div>
+        </div>
+      </div>
+
+      <div class="spot reveal">
+        <div class="spot-text">
+          <span class="spot-num">3</span>
+          <h3>그날의 목소리도<br>함께 간직해요</h3>
+          <p>앱에서 바로 녹음하거나, 휴대폰에 저장해 둔 녹음 파일을 가져와 기록에 붙일 수 있어요. 바쁠 땐 목소리만 먼저 남기고 글은 나중에 적어도 돼요.</p>
+          <ul class="checks">
+            <li>한 번에 최대 10분 녹음, 화면이 잠겨도 이어서 녹음(선택)</li>
+            <li>기존 녹음 파일 가져오기</li>
+            <li>음성은 자동으로 글자로 바꾸지 않고 그대로 보관</li>
+          </ul>
+        </div>
+        <div class="spot-art t3">
+          <div class="phone"><img src="img/screens/07-voice.png" width="1080" height="1920" loading="lazy" alt="목소리 녹음을 시작하고 잠금 상태 녹음 설정을 확인하는 화면"></div>
+        </div>
+      </div>
+
+      <div class="spot flip reveal">
+        <div class="spot-text">
+          <span class="spot-num">4</span>
+          <h3>자라는 말을<br>한눈에 봐요</h3>
+          <p>월별로 늘어나는 단어 수와 단어·표현·문장 기록 현황을 확인하세요. 통계는 보호자가 남긴 기록만으로 계산합니다.</p>
+          <ul class="checks">
+            <li>단어 수는 아이가 그 말을 처음 한 날을 기준으로 집계</li>
+            <li>목소리만 저장한 기록은 단어 수에 더하지 않아요</li>
+            <li>종류별·언어별 기록 현황</li>
+          </ul>
+        </div>
+        <div class="spot-art t4">
+          <div class="phone"><img src="img/screens/05-statistics.png" width="1080" height="1920" loading="lazy" alt="직접 등록한 단어의 월별 누적 그래프와 기록 종류별 집계 화면"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== more features ===== -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">그리고</span>
+        <h2 class="h2">매일 쓰기 좋게 작은 것까지</h2>
+      </div>
+      <ul class="minis">
+        <li class="reveal">
+          <span class="ico t2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.2-5.5 6.5-5.5s5.9 1.9 6.5 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14.5c2.6 0 4.6 1.6 5 4.5"/></svg></span>
+          <h3>아이별 기록장</h3>
+          <p>여러 아이의 프로필을 따로 만들고 쉽게 전환해요. 개월 수도 함께 보여 줘요.</p>
+        </li>
+        <li class="reveal">
+          <span class="ico t4" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></svg></span>
+          <h3>다국어 가정도 함께</h3>
+          <p>한국어·영어·일본어 화면을 지원하고, 아이가 한 말은 6개 언어 중에서 골라 기록해요.</p>
+        </li>
+        <li class="reveal">
+          <span class="ico t1" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9a6 6 0 1 1 12 0c0 6 2.5 7.5 2.5 7.5h-17S6 15 6 9Z"/><path d="M10 20a2.2 2.2 0 0 0 4 0"/></svg></span>
+          <h3>기록 알림</h3>
+          <p>정한 요일과 시간에 새로 한 말을 적도록 알려 드려요. 그날 이미 기록했다면 알리지 않아요.</p>
+        </li>
+        <li class="reveal">
+          <span class="ico t3" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="16" rx="2.5"/><path d="M3.5 9.5h17M8 2.5v4M16 2.5v4"/></svg></span>
+          <h3>날짜별 기록 목록</h3>
+          <p>지금까지 남긴 말을 날짜순으로 넘겨 보고, 종류와 언어로 걸러 찾아요.</p>
+        </li>
+        <li class="reveal">
+          <span class="ico t2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M4 17v2.5A1.5 1.5 0 0 0 5.5 21h13a1.5 1.5 0 0 0 1.5-1.5V17"/></svg></span>
+          <h3>텍스트 기록 내보내기</h3>
+          <p>아이 정보와 직접 쓴 기록을 JSON 파일로 저장해 따로 보관할 수 있어요.</p>
+        </li>
+        <li class="reveal">
+          <span class="ico t4" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></svg></span>
+          <h3>저장 전에 닫혀도 안심</h3>
+          <p>녹음을 마치고 기록을 저장하기 전에 앱이 닫혀도, 다음에 열면 그 녹음을 다시 찾아 드려요.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== characters ===== -->
+  <section class="section" style="background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">아이의 동물 친구</span>
+        <h2 class="h2">사진 대신, 귀여운 띠 캐릭터로</h2>
+        <p>아이 사진을 올릴 필요 없어요. 태어난 해로 12지 동물을 추천하고, 좋아하는 동물로 바꿔도 좋아요.</p>
+      </div>
+      <ul class="zodiac reveal">
+        <li><img src="img/characters/rat.svg" alt="" width="96" height="96"><span>쥐</span></li>
+        <li><img src="img/characters/ox.svg" alt="" width="96" height="96"><span>소</span></li>
+        <li><img src="img/characters/tiger.svg" alt="" width="96" height="96"><span>호랑이</span></li>
+        <li><img src="img/characters/rabbit.svg" alt="" width="96" height="96"><span>토끼</span></li>
+        <li><img src="img/characters/dragon.svg" alt="" width="96" height="96"><span>용</span></li>
+        <li><img src="img/characters/snake.svg" alt="" width="96" height="96"><span>뱀</span></li>
+        <li><img src="img/characters/horse.svg" alt="" width="96" height="96"><span>말</span></li>
+        <li><img src="img/characters/sheep.svg" alt="" width="96" height="96"><span>양</span></li>
+        <li><img src="img/characters/monkey.svg" alt="" width="96" height="96"><span>원숭이</span></li>
+        <li><img src="img/characters/rooster.svg" alt="" width="96" height="96"><span>닭</span></li>
+        <li><img src="img/characters/dog.svg" alt="" width="96" height="96"><span>강아지</span></li>
+        <li><img src="img/characters/pig.svg" alt="" width="96" height="96"><span>돼지</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== screens ===== -->
+  <section class="section" id="screens">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">앱 화면</span>
+        <h2 class="h2">말모아를 미리 둘러보세요</h2>
+        <p>실제 Android 앱 화면입니다. 화면 속 아이와 기록은 예시로 만든 가상 정보예요.</p>
+      </div>
+    </div>
+    <div class="gallery-wrap">
+      <ul class="gallery" tabindex="0" aria-label="앱 화면 모음, 옆으로 넘겨 보세요">
+        <li><figure><img src="img/screens/01-home.png" width="1080" height="1920" loading="lazy" alt="말모아 홈 화면"><figcaption><strong>홈</strong>기록하기, 목소리 녹음, 녹음 파일 가져오기를 한 곳에서</figcaption></figure></li>
+        <li><figure><img src="img/screens/06-record.png" width="1080" height="1920" loading="lazy" alt="기록 편집 화면"><figcaption><strong>기록하기</strong>아이가 한 말과 언어, 관찰 날짜를 입력</figcaption></figure></li>
+        <li><figure><img src="img/screens/03-detail.png" width="1080" height="1920" loading="lazy" alt="기록 상세 화면"><figcaption><strong>기록 상세</strong>말한 날짜와 보호자의 메모를 함께</figcaption></figure></li>
+        <li><figure><img src="img/screens/04-diary.png" width="1080" height="1920" loading="lazy" alt="날짜별 기록 목록 화면"><figcaption><strong>기록 목록</strong>단어·표현·문장을 종류와 언어로 찾아보기</figcaption></figure></li>
+        <li><figure><img src="img/screens/02-dictionary.png" width="1080" height="1920" loading="lazy" alt="단어사전 화면"><figcaption><strong>단어사전</strong>언어별로 모아보는 우리 아이 단어</figcaption></figure></li>
+        <li><figure><img src="img/screens/05-statistics.png" width="1080" height="1920" loading="lazy" alt="통계 화면"><figcaption><strong>통계</strong>월별 누적 단어와 종류별 집계</figcaption></figure></li>
+        <li><figure><img src="img/screens/07-voice.png" width="1080" height="1920" loading="lazy" alt="목소리 녹음 화면"><figcaption><strong>목소리 녹음</strong>잠금 상태 녹음은 원할 때만 켜기</figcaption></figure></li>
+        <li><figure><img src="img/screens/08-import.png" width="1080" height="1920" loading="lazy" alt="녹음 파일 가져오기 화면"><figcaption><strong>파일 가져오기</strong>휴대폰에 있던 녹음 파일을 기록에 첨부</figcaption></figure></li>
+      </ul>
+    </div>
+    <p class="gallery-hint">옆으로 넘겨 더 보기 →</p>
+  </section>
+
+  <!-- ===== privacy / trust ===== -->
+  <section class="section" id="privacy" style="padding-top:24px">
+    <div class="wrap">
+      <div class="trust reveal">
+        <div class="section-head" style="margin-bottom:0">
+          <span class="eyebrow">안심 기록</span>
+          <h2 class="h2">아이의 말은<br>이 기기 안에만 저장됩니다</h2>
+          <p>말모아에는 회원가입이 없고, 개발자는 기록을 받는 서버를 운영하지 않습니다.</p>
+        </div>
+        <ul class="trust-grid">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c.8-4 4-6 8-6s7.2 2 8 6"/><path d="m17 3 4 4M21 3l-4 4"/></svg>
+            <h3>가입 없이 바로</h3>
+            <p>계정, 이메일, 전화번호 없이 설치하고 바로 기록해요. 별명만으로도 충분해요.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10 6h4"/><rect x="9" y="11" width="6" height="5" rx="1"/><path d="M10.5 11V9.5a1.5 1.5 0 0 1 3 0V11"/></svg>
+            <h3>서버로 보내지 않아요</h3>
+            <p>기록과 음성은 기기에만 저장되며 개발자나 제3자와 공유하지 않아요.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></svg>
+            <h3>누를 때만 녹음</h3>
+            <p>마이크는 녹음 버튼을 누를 때만 사용해요. 권한이 없어도 직접 입력은 가능해요.</p>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h10M4 17h7"/><path d="m15 15 6 6M21 15l-6 6"/></svg>
+            <h3>자동 분석 없음</h3>
+            <p>음성 전사, 발음 평가, AI 요약을 하지 않아요. 보호자가 적은 그대로 보관해요.</p>
+          </li>
+        </ul>
+        <div class="notice">
+          <h3>알아 두세요</h3>
+          <ul>
+            <li>기기에만 저장되므로 앱 삭제·앱 데이터 초기화·기기 분실 시 기록을 복구할 수 없어요. 텍스트 내보내기에는 음성 파일이 포함되지 않아요.</li>
+            <li>가족 간 동기화와 클라우드 백업은 아직 제공하지 않아요.</li>
+            <li>홈과 통계 화면에 배너 광고가 있어요. 광고 SDK는 광고 표시를 위해 기기 정보를 처리할 수 있어요.</li>
+            <li>말모아는 기록을 돕는 도구이며 언어발달 검사, 진단 또는 치료를 제공하지 않아요.</li>
+          </ul>
+          <p style="margin-top:16px"><a href="privacy.html">개인정보처리방침 전문 보기 →</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section" id="faq" style="padding-top:24px">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="h2">자주 묻는 질문</h2>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>무료로 쓸 수 있나요?</summary>
+          <p>네. 모든 기능을 무료로 사용할 수 있으며, 홈과 통계 화면에 배너 광고가 표시됩니다. 현재 유료 결제 기능은 없습니다.</p>
+        </details>
+        <details>
+          <summary>언제, 어디서 받을 수 있나요?</summary>
+          <p>Android 기기에서 <a href="https://play.google.com/store/apps/details?id=com.dws.malmoa" rel="noopener">Google Play</a>로 받을 수 있습니다.</p>
+        </details>
+        <details>
+          <summary>아이폰에서도 쓸 수 있나요?</summary>
+          <p>현재는 Android 앱으로 먼저 준비하고 있습니다. iOS 버전 일정은 아직 정해지지 않았습니다.</p>
+        </details>
+        <details>
+          <summary>가족과 함께 기록할 수 있나요?</summary>
+          <p>아직은 지원하지 않습니다. 기록과 음성은 사용 중인 기기에만 저장됩니다. 정보가 기기 밖으로 나가는 기능을 추가할 때는 개인정보처리방침을 먼저 개정하고 앱에서 안내합니다.</p>
+        </details>
+        <details>
+          <summary>기록을 백업할 수 있나요?</summary>
+          <p>더보기의 ‘텍스트 기록 내보내기’로 아이 정보와 직접 쓴 기록을 JSON 파일로 저장할 수 있습니다. 음성 파일은 내보내기에 포함되지 않으니 중요한 녹음은 따로 보관해 주세요.</p>
+        </details>
+        <details>
+          <summary>목소리를 글자로 바꿔 주나요?</summary>
+          <p>아니요. 말모아는 보호자가 직접 적는 기록장입니다. 음성은 자동으로 전사하거나 분석하지 않고 녹음한 그대로 보관하며, 음성만 저장한 기록은 단어 수에 더해지지 않습니다.</p>
+        </details>
+        <details>
+          <summary>아이의 언어 발달 수준을 알려 주나요?</summary>
+          <p>아니요. 말모아의 통계는 보호자가 남긴 기록을 모아 보여 줄 뿐, 언어발달 검사·진단·치료를 제공하지 않습니다. 발달이 걱정된다면 전문가와 상담해 주세요.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== closing ===== -->
+  <section class="section" style="padding-top:24px">
+    <div class="wrap">
+      <div class="closing has-buddy reveal">
+        <h2 class="h2">오늘 들은 한마디부터<br>남겨 보세요</h2>
+        <p>지나고 나면 다시 듣기 어려운 말들. 오늘 들은 말부터 말모아에 모아 두세요.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.dws.malmoa" rel="noopener">Google Play에서 받기</a>
+          <a class="btn btn-ghost" href="mailto:sdwdev89@gmail.com?subject=%EB%A7%90%EB%AA%A8%EC%95%84%20%EB%AC%B8%EC%9D%98">문의하기</a>
+        </div>
+        <img class="buddy" src="img/characters/tiger.svg" alt="" width="200" height="200">
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="../"><span class="brand-mark" aria-hidden="true">G</span>GameIt Studio</a>
+        <p>말모아는 1인 개발 스튜디오 GameIt Studio가 만들고 운영합니다.</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h2>말모아</h2>
+          <ul>
+            <li><a href="#features">기능</a></li>
+            <li><a href="#faq">자주 묻는 질문</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.dws.malmoa" rel="noopener">Google Play</a></li>
+            <li><a href="privacy.html">개인정보처리방침</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>연락처</h2>
+          <ul>
+            <li><a href="mailto:sdwdev89@gmail.com">sdwdev89@gmail.com</a></li>
+            <li><a href="https://github.com/sdwdev" rel="noopener">GitHub</a></li>
+            <li><a href="../">GameIt Studio 홈</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 GameIt Studio. Google Play는 Google LLC의 상표입니다.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var items = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window) || !items.length) return;
+    document.documentElement.classList.add('js');
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    items.forEach(function (el) { io.observe(el); });
+  })();
+</script>
+</body>
+</html>

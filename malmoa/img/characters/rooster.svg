@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+<defs><radialGradient id="head" gradientUnits="userSpaceOnUse" cx="73.2" cy="60.8" r="52">
+<stop offset="0" stop-color="#FFE1A0"/><stop offset="1" stop-color="#FFD985"/>
+</radialGradient></defs>
+<ellipse cx="100" cy="185.5" rx="70" ry="6.5" fill="#E8DFD0"/>
+<ellipse cx="100" cy="148" rx="44" ry="39" fill="#FFD985"/>
+<ellipse cx="100" cy="150.5" rx="24" ry="27.5" fill="#FFF2D7"/>
+<ellipse cx="57.5" cy="156.5" rx="17.5" ry="19.5" fill="#FFD985"/>
+<ellipse cx="142.5" cy="156.5" rx="17.5" ry="19.5" fill="#FFD985"/>
+<ellipse cx="76.5" cy="178" rx="19.5" ry="13" fill="#FFD985"/>
+<ellipse cx="123.5" cy="178" rx="19.5" ry="13" fill="#FFD985"/>
+<ellipse cx="55.5" cy="49" rx="21.5" ry="23" fill="#FFD985"/>
+<ellipse cx="144.5" cy="49" rx="21.5" ry="23" fill="#FFD985"/>
+<ellipse cx="55.5" cy="48.5" rx="11.5" ry="12.5" fill="#EBA98B"/>
+<ellipse cx="144.5" cy="48.5" rx="11.5" ry="12.5" fill="#EBA98B"/>
+<ellipse cx="100" cy="92" rx="67" ry="52" fill="url(#head)"/>
+<ellipse cx="90.5" cy="39" rx="9.5" ry="15" fill="#E58977"/>
+<ellipse cx="109" cy="37" rx="10" ry="16" fill="#E58977"/>
+<ellipse cx="68" cy="108.5" rx="11" ry="6.5" fill="#F0A490"/>
+<ellipse cx="132" cy="108.5" rx="11" ry="6.5" fill="#F0A490"/>
+<ellipse cx="71.5" cy="90" rx="4.5" ry="6" fill="#715039"/>
+<ellipse cx="128.5" cy="90" rx="4.5" ry="6" fill="#715039"/>
+<ellipse cx="70.5" cy="86.5" rx="1.5" ry="1.5" fill="#FFFFFF"/>
+<ellipse cx="127.5" cy="86.5" rx="1.5" ry="1.5" fill="#FFFFFF"/>
+<ellipse cx="100" cy="114.5" rx="23" ry="15.5" fill="#FFEACF"/>
+<path d="M91 106L109 106L100 119Z" fill="#D99339"/>
+</svg>
